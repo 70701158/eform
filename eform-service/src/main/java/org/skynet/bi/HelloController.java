@@ -19,10 +19,9 @@ import io.swagger.annotations.ApiOperation;
 @RestController
 @RequestMapping("/hello")
 @Api("Hello world Demo")
-@ConfigurationProperties(prefix = "hello", ignoreUnknownFields = true)
 public class HelloController extends BaseController {
-	
-	private String content;
+	@Value("${hello.content}")
+    private String content;
 	
     @ApiOperation(value="Say hello", notes="")
     @RequestMapping(value = "", method = RequestMethod.GET)

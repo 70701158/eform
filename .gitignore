@@ -1,5 +1,9 @@
 .DS_Store
-*.class
 *.epoch
 *.log
 *.swp
+target
+.settings
+.metadata
+.project
+.classpath
