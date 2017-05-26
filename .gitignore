@@ -7,3 +7,4 @@ target
 .metadata
 .project
 .classpath
+eform-service/target/classes/META-INF/maven/skynet/eform/pom.xml

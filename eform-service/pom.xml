@@ -22,6 +22,7 @@
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 		<java.version>1.8</java.version>
+		<spring-cloud.version>Dalston.SR1</spring-cloud.version>
 	</properties>
 
 	<dependencies>
@@ -38,13 +39,11 @@
         <dependency>
     		<groupId>commons-dbcp</groupId>
     		<artifactId>commons-dbcp</artifactId>
-    		<version>1.4</version>
 		</dependency>
 		
 		<dependency>
 		    <groupId>org.postgresql</groupId>
 		    <artifactId>postgresql</artifactId>
-		    <version>42.0.0</version>
 		</dependency>
 		
 		<dependency>
@@ -89,14 +88,12 @@
 		<dependency>
 		    <groupId>org.springframework.data</groupId>
 		    <artifactId>spring-data-mongodb</artifactId>
-		    <version>1.10.3.RELEASE</version>
 		</dependency>
 		
 		<!-- https://mvnrepository.com/artifact/ch.qos.logback/logback-core -->
 		<dependency>
 		    <groupId>ch.qos.logback</groupId>
 		    <artifactId>logback-core</artifactId>
-		    <version>1.2.3</version>
 		</dependency>
 		
 		<dependency>
@@ -104,30 +101,29 @@
             <artifactId>spring-boot-starter-actuator</artifactId>
 		</dependency>
 
-		<!-- https://mvnrepository.com/artifact/org.springframework.data/spring-data-commons -->
-		<!-- <dependency>
-		    <groupId>org.springframework.data</groupId>
-		    <artifactId>spring-data-commons</artifactId>
-		    <version>1.13.3.RELEASE</version>
-		</dependency>
 		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-data-jpa</artifactId>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-starter-config</artifactId>
 		</dependency>
-		https://mvnrepository.com/artifact/org.springframework.data/spring-data-mongodb
+		
 		<dependency>
-		    <groupId>org.springframework.data</groupId>
-		    <artifactId>spring-data-mongodb</artifactId>
-		    <version>1.10.3.RELEASE</version>
-		</dependency>
-		https://mvnrepository.com/artifact/org.springframework.data/spring-data-commons-core
-		<dependency>
-		    <groupId>org.springframework.data</groupId>
-		    <artifactId>spring-data-commons-core</artifactId>
-		    <version>1.4.1.RELEASE</version>
-		</dependency> -->
+	        <groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-starter-eureka</artifactId>
+	    </dependency>
 						
 	</dependencies>
+	
+	<dependencyManagement>
+		<dependencies>
+			<dependency>
+				<groupId>org.springframework.cloud</groupId>
+				<artifactId>spring-cloud-dependencies</artifactId>
+				<version>${spring-cloud.version}</version>
+				<type>pom</type>
+				<scope>import</scope>
+			</dependency>
+		</dependencies>
+	</dependencyManagement>
 
 	<build>
 		<plugins>
