@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: com.ygsoft.realform.define.FormDefineServiceTests
+-------------------------------------------------------------------------------
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.456 sec - in com.ygsoft.realform.define.FormDefineServiceTests
