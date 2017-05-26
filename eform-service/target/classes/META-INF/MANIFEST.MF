@@ -1,10 +1,11 @@
 Manifest-Version: 1.0
-Implementation-Title: RealForm
+Implementation-Title: eform-service
 Implementation-Version: 0.0.1-SNAPSHOT
 Built-By: javadebug
-Implementation-Vendor-Id: skynet
+Implementation-Vendor-Id: skynet.eform
 Build-Jdk: 1.8.0_131
-Implementation-URL: http://projects.spring.io/spring-boot/eform/
+Implementation-URL: http://projects.spring.io/spring-boot/eform-servic
+ e/
 Created-By: Maven Integration for Eclipse
 Implementation-Vendor: Pivotal Software, Inc.
 

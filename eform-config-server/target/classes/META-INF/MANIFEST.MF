@@ -2,7 +2,7 @@ Manifest-Version: 1.0
 Implementation-Title: eform-config-server
 Implementation-Version: 0.0.1-SNAPSHOT
 Built-By: javadebug
-Implementation-Vendor-Id: com.example
+Implementation-Vendor-Id: skynet.eform
 Build-Jdk: 1.8.0_131
 Implementation-URL: http://projects.spring.io/spring-boot/eform-config
  -server/
